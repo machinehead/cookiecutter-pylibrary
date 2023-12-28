@@ -3,5 +3,6 @@
   "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
   "package_name": "{{ cookiecutter.project_slug|replace('-', '_') }}",
   "author_name": "Anonymous",
-  "author_email": "anonymous@noname.no"
+  "author_email": "anonymous@noname.no",
+  "min_python_version": "3.10"
 }

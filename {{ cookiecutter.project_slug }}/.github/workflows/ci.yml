@@ -17,11 +17,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Python 3.10
+      - name: Set up Python {{ cookiecutter.min_python_version }}
         id: setup-python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.10
+          python-version: {{ cookiecutter.min_python_version }}
 
       - name: Load cached Poetry installation
         id: cached-poetry
