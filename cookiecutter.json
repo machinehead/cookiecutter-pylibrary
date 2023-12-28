@@ -1,4 +1,5 @@
 {
   "project_name": "Cookiecutter Pylibrary",
-  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}"
+  "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+  "package_name": "{{ cookiecutter.project_slug|replace('-', '_') }}"
 }
