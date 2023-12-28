@@ -6,11 +6,21 @@ authors = ["{{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>"]
 readme = "README.md"
 packages = [{include = "{{ cookiecutter.package_name }}", from = "src"}]
 
+
+
 [tool.poetry.dependencies]
 python = "^{{ cookiecutter.min_python_version }}"
 
+
+
 [tool.poetry.group.dev.dependencies]
+# Code management
 pre-commit = "*"
+
+# Testing
+pytest = "*"
+
+
 
 [build-system]
 requires = ["poetry-core"]
