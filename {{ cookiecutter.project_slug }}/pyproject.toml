@@ -18,6 +18,7 @@ pre-commit = "*"
 # Testing
 pytest = "*"
 pytest-cov = "*"
+mypy = "*"
 
 
 [build-system]
