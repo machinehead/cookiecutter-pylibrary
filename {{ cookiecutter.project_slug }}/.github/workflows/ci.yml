@@ -48,8 +48,8 @@ jobs:
           key: {{ "venv-${{ steps.setup-python.outputs.python-version }}" }}
 
       - name: Install dependencies
-        if: steps.cached-venv.outputs.cache-hit != 'true'
-        run: poetry install --no-root
+        # if: steps.cached-venv.outputs.cache-hit != 'true'
+        run: poetry install --sync
 
       - name: Run tests
         run: poetry run pytest
