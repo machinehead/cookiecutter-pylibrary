@@ -21,7 +21,7 @@ jobs:
 
       - name: Set up Python {{ cookiecutter.min_python_version }}
         id: setup-python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "{{ cookiecutter.min_python_version }}"
 
