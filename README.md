@@ -1,3 +1,7 @@
+# Usage
+
+`cruft create git@github.com:machinehead/cookiecutter-pylibrary.git`
+
 # Sources of inspiration:
 
 https://github.com/TezRomacH/python-package-template
